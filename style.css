@@ -1,0 +1,188 @@
+body {
+    background-color: black;
+    font-family: Playwrite Deutschland Grundschrift;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    background-image: url('andrew-kliatskyi-PC01nb6VhM4-unsplash.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0; 
+    
+}
+html {
+    scroll-behavior: smooth;
+}
+.navcontainer {
+    border: 1px solid white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    background-color: black;
+}
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.nav {
+    text-decoration: none;
+    color: white;
+}
+.name {
+    margin-right: 50px;   
+}
+.profileimg {
+    display: flex;
+    justify-content: center;
+    position: static;
+}
+.img1{
+    width: 100%;
+    opacity: 0.6;
+}
+
+.imgtext {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 70%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+}
+.bennett {
+    color: yellow;
+}
+.imgtext h1 {
+    font-size: 50px;
+    text-shadow: 4px 4px 6px black;
+}
+.imgtext p {
+    font-size: 30px;
+    text-shadow: 4px 4px 6px black;
+}
+.imgtext button{
+    width: 200px;
+    height: 30px;
+    font-size: large;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    box-shadow: 2px 2px 4px white;
+}
+.section3 {
+    justify-content: center;
+    margin-right: 50px;
+    border-style: none;
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 30px;
+}
+.section3 h1 {
+    color: yellow;
+}
+.section3 p {
+    line-height: 1.5;
+}
+.section4 {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: large;
+    background-color: rgb(43, 43, 43);
+    border: 1px solid white;
+    margin-top: 30px;
+}
+.section4a {
+    display: flex;
+}
+.fa-solid {
+    margin-top: 18px;
+    margin-right: 7px;
+}
+.fa-regular {
+    margin-top: 18px;
+    margin-right: 7px;
+}
+.section5 {
+    margin-top: 50px;
+    justify-content: center;
+    width: 450px;
+    margin-left: 35%;
+}
+.section5 h1 {
+    color: yellow;
+}
+.section6 {
+    margin-top: 58px;
+}
+.section6a {
+    margin-top: 60px;
+    display: flex;
+    justify-content:space-evenly;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.section6 h1 {
+    color: yellow;
+    text-align: center;
+}
+.porimg {
+    width: 60%;
+    border: 3px solid white;
+    border-radius: 5%;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.porimg:hover{
+    transform: scale(1.1);
+    opacity: 0.8;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+.section7a {
+    margin-left: 25%;
+    border: 1px solid white;
+    width: 50%;
+}
+.section7ai {
+    margin-left: 120px;
+}
+.section7 h1 {
+    text-align: center;
+    color: yellow;
+}
+.section7 p {
+    font-size: 30px;
+}
+.section7 input {
+    width: 600px;
+    height: 25px;
+}
+.form1{
+    margin-bottom:20px;
+}
+.section7 textarea {
+    width: 650px;
+    height: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0; 
+    }
+    to {
+        opacity: 1; 
+    }
+}
+.fade-in {
+    animation: fadeIn 5s ease-in-out;
+}
+.fadein {
+    animation: fadeIn 7s ease-in-out;
+}
