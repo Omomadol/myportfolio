@@ -128,6 +128,10 @@ html {
 }
 .section6 {
     margin-top: 58px;
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
 }
 .section6a {
     margin-top: 60px;
@@ -141,10 +145,39 @@ html {
     text-align: center;
 }
 .porimg {
-    max-width: 60%;
+    /* max-width: 60%; */
+    width: 100%;
     border: 3px solid white;
     border-radius: 5%;
     transition: transform 0.3s ease, opacity 0.3s ease;
+    display: none;
+}
+img.displaySlide {
+    display: block;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.section6 button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    background-color: hsla(0, 0%, 0%, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+}
+.prev{
+    left: 0;
+}
+.next{
+    right: 0;
+}
+@keyframes fade {
+    from {opacity: .5;}
+    to {opacity: 1;}
 }
 .porimg:hover{
     transform: scale(1.1);
@@ -313,7 +346,6 @@ html {
         max-width: 90%;
         margin-left: 5%;
     }
-    
     .section6a {
         margin-top: 60px;
         flex-direction: column;
@@ -349,5 +381,8 @@ html {
     .section7 textarea {
         width: 95%;
     }
-    
+    .section6 button{
+        display: none;
+    }
 }
+
